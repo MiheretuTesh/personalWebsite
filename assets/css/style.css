@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NAVIGATION */
+#top-nav{
+    background-color: #ffff;
+    margin-top: 10px;
+}
+.blackText {
+    color: black;
+}
+
+.nav-item {
+    width: 150px;
+}
+nav{
+    z-index: 1;
+}
+.offcanvas-header {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .offcanvas-header *{
+        z-index: 1000;
+    }
+    .offcanvas-header {
+        z-index: 1000;
+        display: block;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #eee;
+        transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+    .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-30%);
+    }
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  header {
+      z-index: -100 !important;
+    background-blend-mode: multiply;
+    background-image: url("../image/Thomas-Frank-YouTuber-2020-1-1400x733.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 700px;
+    padding-top: 25%;
+    padding-bottom: 10%;
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+
+}
+.fa-play{
+    border: 1px solid #fff !important;
+    border-radius: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: px;
+}
