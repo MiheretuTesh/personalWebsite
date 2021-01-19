@@ -73,3 +73,15 @@ nav{
     font-size: 2rem;
     margin-top: px;
 }
+
+#footer{
+    background-color: rgb(5, 45, 63);
+    clip-path: polygon(50% 23%, 100% 0, 100% 100%, 0 99%, 0% 50%, 0 0);
+    z-index: 1000;
+    margin-top: 100px;
+
+}
+#footer .row-1{
+    background-color: brown;
+    margin-top: -20px;
+}
