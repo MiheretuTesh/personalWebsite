@@ -85,3 +85,15 @@ nav{
     background-color: brown;
     margin-top: -20px;
 }
+.bg-dark a{
+    color: rgb(148, 146, 144);
+}
+.bg-dark{
+    background-color: #fff !important;
+    z-index: 100;
+  }
+  .bg-dark a{
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "Open Sans ", sans-serif;
+  }
