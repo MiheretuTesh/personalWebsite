@@ -11,6 +11,12 @@ body{
     background-color: #ffff;
     margin-top: 10px;
 }
+.nav-item {
+    width: 150px;
+}
+nav{
+    z-index: 1;
+}
 .blackText {
     color: black;
 }
@@ -18,9 +24,7 @@ body{
 .nav-item {
     width: 150px;
 }
-nav{
-    z-index: 1;
-}
+
 .offcanvas-header {
     display: none;
 }
@@ -44,9 +48,10 @@ nav{
         padding-left: 1rem;
         overflow-y: auto;
         visibility: hidden;
-        background-color: #eee;
+        background-color: rgb(250, 250, 250);
         transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
     }
+
     .navbar-collapse.show {
         visibility: visible;
         transform: translateX(-40%);
@@ -58,7 +63,7 @@ nav{
   header {
       z-index: -100 !important;
     background-blend-mode: multiply;
-    background-image: url("../image/Thomas-Frank-YouTuber-2020-1-1400x733.jpg");
+    background-image: url("../image/noah-silliman-gzhyKEo_cbU-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -82,7 +87,11 @@ nav{
     clip-path: polygon(10% 0, 90% 0, 90% 10%, 100% 0, 100% 100%, 0 100%, 0 0, 10% 10%);
     min-height: 100px;
 }
-
+#footer-1{
+    background-color: rgb(5, 45, 63);
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    min-height: 100px;
+}
 .row-1{
     background-image: url("https://images.pexels.com/photos/1376201/pexels-photo-1376201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     border-radius: 10px;
@@ -114,6 +123,13 @@ nav{
     color: #fff;
 }
 #footer .fa:hover{
+    color: rgb(234, 245, 84);
+}
+#footer-1 .fa{
+    font-size: 1.5rem;
+    color: #fff;
+}
+#footer-1 .fa:hover{
     color: rgb(234, 245, 84);
 }
 @media(max-width:992px){
@@ -230,7 +246,44 @@ nav{
     font-weight: 700 !important;
 }
 .intro-text{
-    font-size: 2rem;
+    /* font-size: 2rem; */
+}
+.about-text h4{
+    font-size: 3rem;
+    font-weight: 300;
+}
+.about-text p{
+    font-size: 1rem;
+    font-family: "Roboto";
+}
+
+
+/* Article */
+
+/* Notion */
+/* Courses */
+.courses h1{
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+.courses div p{
+    font-size: 1.2rem;
+}
+.notion div p{
+    font-size: 1.5rem !important;
+    font-family: "Roboto";
+}
+.notion div{
+    padding-bottom: 1rem !important;
+}
+
+/* templates */
+.template h1{
+    font-weight: 700;
+    font-size: 3.8rem !important;
+}
+.template div p{
+    font-family: "Roboto";
 }
 /* MEDIA QUERY */
 @media(max-width:992px){
@@ -248,8 +301,20 @@ nav{
     .btn{
         font-size: 1rem;
     }
-
-
+    .article-head{
+        font-size: 3rem;
+    }
+    .article{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .coursess-text{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+    .courses h1{
+        font-size: 3rem;
+    }
 }
 @media(max-width:767px){
     header {
@@ -284,6 +349,26 @@ nav{
     .btn{
         font-size: 1.3rem;
     }
+    .article-head{
+        font-size: 2.5rem;
+    }
+    .coursess-text{
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+    .courses h1{
+        font-size: 2.5rem;
+    }
+    .template h1{
+        font-weight: 500;
+        font-size: 3rem !important;
+    }
+.template-text{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
     
 }
 @media(max-width:540px){
@@ -293,7 +378,7 @@ nav{
       padding-bottom: 5%;
   
   }
-  .intro .display-1{
+  .display-1{
       font-size: 5rem !important;
   }
     .display_1 {
@@ -301,4 +386,18 @@ nav{
         padding-top: 1rem !important;
         padding-bottom: 1rem !important;
     }
+    .notion-text{
+        font-size: 1.8rem ;
+    }
+    .article-head{
+        font-size: 2rem;
+    }
+    .template-text{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+
+    }
 }
+
